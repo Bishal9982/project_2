@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+    padding: 0% ;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(150, 199, 182);
+}
+.container{
+    max-width: 70%;
+    margin: 0 auto;
+}
+.application_box{
+    max-width: 600px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgb(197, 204, 208);
+    box-shadow: 2px 3px 2px rgb(81, 123, 165);
+    border-radius: 10px;
+}
+.small_tag{
+   font-size: 20px;
+}
+.form_container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+.form_content{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+ input, select, textarea{
+    padding: 10px 10px;
+    border: 2px solid rgb(135, 133, 133);
+    border-radius: 5px;
+    font-size: 15px;
+}
+input:focus{
+    outline-color: black;
+    /* outline-style: auto; */
+}
+.button_container{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+button{
+    border: transparent solid 3px;
+    background-color: rgb(192, 83, 170);
+    padding: 7px;
+    font-size: 20px;
+    color: aliceblue;
+    border-radius: 7px;
+    transition: 0.3s ease-in;
+}
+button:hover{
+    background-color: bisque;
+    border: 2px solid red;
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+.Address_container{
+    grid-column: 1/span 2;
+}
+.Address_container textarea{
+    width: 100%;
+}
+.cv_container input, select, textarea{
+    border: none;
+}
+.Address_container input, select, textarea{
+    border: 2px solid rgb(135, 133, 133);
+}
+@media (max-width: 718px){
+    .Address_container{
+        grid-column: 1/span 1;
+    }
+}
